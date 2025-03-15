@@ -1,6 +1,19 @@
+# Click Licker
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+
+Example `.env`:
+
+```bash
+SENDGRID_API_KEY=
+SUPABASE_AUTH_GITHUB_CLIENT_ID=
+SUPABASE_AUTH_GITHUB_SECRET=
+SENDGRID_EMAIL=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
 
 First, run the development server:
 
