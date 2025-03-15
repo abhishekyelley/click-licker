@@ -6,5 +6,6 @@ declare namespace NodeJS {
     SENDGRID_EMAIL: string;
     NEXT_PUBLIC_SUPABASE_URL: string;
     NEXT_PUBLIC_SUPABASE_ANON_KEY: string;
+    SITE_URL: string;
   }
 }
