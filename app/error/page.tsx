@@ -4,9 +4,9 @@ import Link from "next/link";
 export default async function Page({
   searchParams,
 }: {
-  searchParams: { [key: string]: string };
+  searchParams: Promise<{ [key: string]: string }>;
 }) {
-  const code = searchParams.code;
+  const { code } = await searchParams;
   const isUserNotInvited = code === "unexpected_failure";
   return (
     <main className="flex flex-col justify-center min-h-screen items-center">
