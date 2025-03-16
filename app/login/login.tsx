@@ -18,6 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 
 const initialState: ActionMessage = {
   message: "",
@@ -101,8 +102,10 @@ export function Login() {
               formAction(formData);
             });
           }}
+          className="cursor-pointer"
           disabled={isTransitioning}
         >
+          <SiGithub />
           {isTransitioning ? "Logging In..." : "Login with GitHub"}
         </Button>
       </form>
